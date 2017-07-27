@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  UserDefineRuntimeAttributesSample
-//
-//  Created by 前田 晃良 on 2017/07/26.
-//  Copyright © 2017年 d_na_ser. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

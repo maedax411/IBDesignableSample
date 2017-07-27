@@ -12,16 +12,20 @@
 		9DE6829C1F282D5000991D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE6829A1F282D5000991D10 /* Main.storyboard */; };
 		9DE6829E1F282D5000991D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE6829D1F282D5000991D10 /* Assets.xcassets */; };
 		9DE682A11F282D5000991D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE6829F1F282D5000991D10 /* LaunchScreen.storyboard */; };
+		9DE682A91F28633000991D10 /* viewExtension in Resources */ = {isa = PBXBuildFile; fileRef = 9DE682A81F28633000991D10 /* viewExtension */; };
+		9DE682AE1F28896C00991D10 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE682AD1F28896C00991D10 /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9DE682931F282D5000991D10 /* UserDefineRuntimeAttributesSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDefineRuntimeAttributesSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE682931F282D5000991D10 /* IBDesignableSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBDesignableSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE682961F282D5000991D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DE682981F282D5000991D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DE6829B1F282D5000991D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE6829D1F282D5000991D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE682A01F282D5000991D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DE682A21F282D5000991D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE682A81F28633000991D10 /* viewExtension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = viewExtension; sourceTree = "<group>"; };
+		9DE682AD1F28896C00991D10 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		9DE6828A1F282D5000991D10 = {
 			isa = PBXGroup;
 			children = (
-				9DE682951F282D5000991D10 /* UserDefineRuntimeAttributesSample */,
+				9DE682951F282D5000991D10 /* IBDesignableSampleSample */,
 				9DE682941F282D5000991D10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +50,41 @@
 		9DE682941F282D5000991D10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DE682931F282D5000991D10 /* UserDefineRuntimeAttributesSample.app */,
+				9DE682931F282D5000991D10 /* IBDesignableSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DE682951F282D5000991D10 /* UserDefineRuntimeAttributesSample */ = {
+		9DE682951F282D5000991D10 /* IBDesignableSampleSample */ = {
 			isa = PBXGroup;
 			children = (
 				9DE682961F282D5000991D10 /* AppDelegate.swift */,
 				9DE682981F282D5000991D10 /* ViewController.swift */,
+				9DE682AC1F2888D500991D10 /* Designable */,
 				9DE6829A1F282D5000991D10 /* Main.storyboard */,
+				9DE682A81F28633000991D10 /* viewExtension */,
 				9DE6829D1F282D5000991D10 /* Assets.xcassets */,
 				9DE6829F1F282D5000991D10 /* LaunchScreen.storyboard */,
 				9DE682A21F282D5000991D10 /* Info.plist */,
 			);
-			path = UserDefineRuntimeAttributesSample;
+			name = IBDesignableSampleSample;
+			path = IBDesignableSample;
+			sourceTree = "<group>";
+		};
+		9DE682AC1F2888D500991D10 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				9DE682AD1F28896C00991D10 /* DesignableButton.swift */,
+			);
+			name = Designable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DE682921F282D5000991D10 /* UserDefineRuntimeAttributesSample */ = {
+		9DE682921F282D5000991D10 /* IBDesignableSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DE682A51F282D5000991D10 /* Build configuration list for PBXNativeTarget "UserDefineRuntimeAttributesSample" */;
+			buildConfigurationList = 9DE682A51F282D5000991D10 /* Build configuration list for PBXNativeTarget "IBDesignableSample" */;
 			buildPhases = (
 				9DE6828F1F282D5000991D10 /* Sources */,
 				9DE682901F282D5000991D10 /* Frameworks */,
@@ -79,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = UserDefineRuntimeAttributesSample;
+			name = IBDesignableSample;
 			productName = UserDefineRuntimeAttributesSample;
-			productReference = 9DE682931F282D5000991D10 /* UserDefineRuntimeAttributesSample.app */;
+			productReference = 9DE682931F282D5000991D10 /* IBDesignableSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9DE6828E1F282D5000991D10 /* Build configuration list for PBXProject "UserDefineRuntimeAttributesSample" */;
+			buildConfigurationList = 9DE6828E1F282D5000991D10 /* Build configuration list for PBXProject "IBDesignableSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DE682921F282D5000991D10 /* UserDefineRuntimeAttributesSample */,
+				9DE682921F282D5000991D10 /* IBDesignableSample */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE682A11F282D5000991D10 /* LaunchScreen.storyboard in Resources */,
+				9DE682A91F28633000991D10 /* viewExtension in Resources */,
 				9DE6829E1F282D5000991D10 /* Assets.xcassets in Resources */,
 				9DE6829C1F282D5000991D10 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +154,7 @@
 			files = (
 				9DE682991F282D5000991D10 /* ViewController.swift in Sources */,
 				9DE682971F282D5000991D10 /* AppDelegate.swift in Sources */,
+				9DE682AE1F28896C00991D10 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UserDefineRuntimeAttributesSample/Info.plist;
+				INFOPLIST_FILE = IBDesignableSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aaa.UserDefineRuntimeAttributesSample;
+				PRODUCT_BUNDLE_IDENTIFIER = IBDesignableSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,9 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UserDefineRuntimeAttributesSample/Info.plist;
+				INFOPLIST_FILE = IBDesignableSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aaa.UserDefineRuntimeAttributesSample;
+				PRODUCT_BUNDLE_IDENTIFIER = IBDesignableSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -285,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DE6828E1F282D5000991D10 /* Build configuration list for PBXProject "UserDefineRuntimeAttributesSample" */ = {
+		9DE6828E1F282D5000991D10 /* Build configuration list for PBXProject "IBDesignableSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DE682A31F282D5000991D10 /* Debug */,
@@ -294,13 +311,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DE682A51F282D5000991D10 /* Build configuration list for PBXNativeTarget "UserDefineRuntimeAttributesSample" */ = {
+		9DE682A51F282D5000991D10 /* Build configuration list for PBXNativeTarget "IBDesignableSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DE682A61F282D5000991D10 /* Debug */,
 				9DE682A71F282D5000991D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
